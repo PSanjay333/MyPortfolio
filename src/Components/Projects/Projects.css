@@ -1,0 +1,65 @@
+.project-wraper {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 4px 10px white;
+  }
+  
+  .project-details p span {
+    background: linear-gradient(270deg, rgb(24, 24, 176) 20%, rgb(166, 73, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .project-details h1 span {
+    background: linear-gradient(270deg, rgb(78, 78, 226) 20%, rgb(255, 253, 253) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .project-img {
+    border: 5px solid black;
+  }
+  
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .card h3 {
+    background: linear-gradient(270deg, rgb(24, 24, 176) 20%, rgb(166, 73, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card p {
+    color: azure;
+  }
+  
+  .link{
+    background: linear-gradient(270deg, rgb(24, 24, 176) 20%, rgb(166, 73, 73) 100%) !important;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .link:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+
+  

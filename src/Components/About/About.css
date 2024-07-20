@@ -1,0 +1,112 @@
+.about-wraper {
+    background: black;
+    padding: 20px;
+    box-shadow: 0 4px 8px white;
+  }
+  
+  .details h1 span {
+    background: linear-gradient(270deg, rgb(78, 78, 226) 20%, rgb(255, 253, 253) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .img {
+    border: 2cap solid transparent;
+    border-radius: 50px;
+  }
+  
+  .img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .details span {
+    background: linear-gradient(270deg, rgb(24, 24, 176) 20%, rgb(166, 73, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    letter-spacing: 0.0375rem;
+    text-transform: uppercase;
+    
+  }
+  
+  .nav-link:hover {
+    color: rgb(232, 232, 234) !important;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .nav-pills .nav-link.active {
+    background: linear-gradient(270deg, rgb(24, 24, 176) 20%, rgb(166, 73, 73) 100%);
+  }
+  
+  .accordion-button {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    background: rgb(255, 251, 251);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: rgb(255, 251, 251);
+  }
+
+  
+  
+  .accordion-body {
+    color: black;
+    background-color: rgb(250, 247, 247);
+  }
+  
+  .accordion-button:focus {
+    border-color: black !important;
+  }
+  
+  .accordion-body a {
+    text-decoration: none;
+    color: rgb(127, 127, 210) !important;
+  }
+  
+  .accordion-body p span {
+    background: linear-gradient(270deg, rgb(78, 78, 226) 20%, rgb(197, 62, 62) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+
+  @media (max-width: 767px) {
+    .img {
+      display: none;
+    }
+  
+    .nav-pills {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .nav-item {
+      margin: 0;
+    }
+  
+    .nav-link {
+      margin-right: 5px;
+      margin-left: 5px;
+      text-align: center;
+    }
+  
+    .tab-content {
+      margin-top: 20px;
+    }
+  }
+  

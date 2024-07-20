@@ -1,0 +1,75 @@
+
+  .hero {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(300deg, rgb(126, 211, 207) 30%, rgb(5, 172, 233) 40%, rgb(7, 7, 11) 30%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  .details h1 {
+    background: linear-gradient(270deg, rgb(78, 78, 226) 20%, rgb(255, 253, 253) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .details h3  {
+    color: rgb(228, 204, 204);
+  }
+
+  .details p{
+    color: rgb(228, 204, 204);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .buttons a {
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+  }
+  
+  .buttons a:hover {
+    border: 2px solid white;
+  }
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-fluid1 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    border: 2cap solid rgb(78, 78, 226);
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .img-fluid1:hover {
+    border: 5px solid black;
+    transform: scale(1.05);
+  }
+
+
+  @media (max-width: 767px){
+    .img-fluid1{
+      display: none;
+    }
+
+    .hero{
+      height: auto;
+    }
+  }
+  
+
+
+  
