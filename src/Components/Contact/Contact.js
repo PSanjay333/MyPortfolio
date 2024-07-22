@@ -2,13 +2,16 @@ import React, { useState, useRef } from "react";
 import "./Contact.css";
 import { Alert } from "react-bootstrap";
 
+
 const Contact = () => {
   const [msg, setMsg] = useState("");
   const [msgType, setMsgType] = useState("");
+  const [loading, setLoading] = useState(false);
   const formRef = useRef(null);
 
   const onSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
     const formData = new FormData(event.target);
 
     formData.append("access_key", "923cf536-2ffe-4bb6-a0ac-9a48d1b2bacd");
@@ -37,6 +40,8 @@ const Contact = () => {
     } catch (error) {
       setMsgType("danger");
       setMsg("An error occurred. Please try again.");
+    }finally {
+      setLoading(false);
     }
   };
 
@@ -110,6 +115,12 @@ const Contact = () => {
                     autoComplete="off"
                   ></textarea>
                 </div>
+                {loading && (
+                  <div className="text-center mb-4">
+                  <i className="fas fa-spinner fa-spin fa-2x"></i>
+                  <p>Please wait...</p>
+                </div>
+                )}
                 {msg && (
                   <Alert key={msgType} variant={msgType} onClose={() => setMsg("")} dismissible>
                     {msg}
