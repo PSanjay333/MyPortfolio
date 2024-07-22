@@ -76,6 +76,7 @@ const Contact = () => {
                     className="form-control"
                     placeholder="Enter your name..."
                     autoComplete="off"
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -85,6 +86,7 @@ const Contact = () => {
                     className="form-control"
                     placeholder="Enter your phone number..."
                     autoComplete="off"
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -94,6 +96,7 @@ const Contact = () => {
                     className="form-control"
                     placeholder="Enter your email..."
                     autoComplete="off"
+                    required
                   />
                 </div>
                 <div className="mb-4">
