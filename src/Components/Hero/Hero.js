@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="hero" id="hero">
+    <div className="hero" id="home">
       <div className="container">
         <div className="row align-items-center justify-content-between">
           <div className="col-md-6">
