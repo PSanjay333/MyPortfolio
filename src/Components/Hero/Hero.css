@@ -50,7 +50,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 50%; 
-    border: 2cap solid rgb(78, 78, 226);
+/*     border: 2cap solid rgb(78, 78, 226); */
     transition: transform 0.3s, border-color 0.3s;
   }
   
